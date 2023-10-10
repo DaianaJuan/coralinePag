@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Sorts+Mill+Goudy&display=swap');
+/*tipografìa menu*/
+/*@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Cinzel&family=Kurale&family=Life+Savers&family=Sorts+Mill+Goudy&display=swap');*/
+/*tipografia h2 y h3*/
+@import url('https://fonts.googleapis.com/css2?family=Amita&family=Bellefair&family=Cinzel&family=Kurale&family=Life+Savers&family=Sorts+Mill+Goudy&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+    height: 100%;
+    background-color: rgb(80,112,150);
+    font-size: 62.5%;
+}
+
+
+
+/*grilla index.html*/
+
+#grilla{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 15% auto 5%;
+    gap: 10px;
+}
+#grilla > * {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75); /*permite proyectar una sombra difuminada desde el marco de casi cualquier elemento*/
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+  }
+
+/*trabajando en el header*/
+
+.header{
+    grid-area: header;
+    background-color:black;
+    background-image: url(./imgCoraline/encabezado2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.flexMenu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.flexMenu li{
+    list-style-type: none;
+}
+
+.flexMenu a{
+    text-decoration: none;
+    color: rgba(240,222,56,255);
+    font-size: 1.8rem;
+    font-family: 'Bellefair', serif;
+    font-family: 'Kurale', serif;
+    font-family: 'Sorts Mill Goudy', serif;
+}
+
+/*fin header*/
+/*trabajando en el main*/
+
+.main{
+    grid-area: main;
+    background-color: black;
+    /*background-color: rgb(172,134,202);*/
+    font-family: 'Bellefair', serif;
+    font-family: 'Kurale', serif;
+    font-family: 'Sorts Mill Goudy', serif;
+}
+
+/*titulo*/
+
+.h1{
+    padding-top: 2rem;
+    padding-bottom: 4rem;    
+}
+.h1 img{
+    width: 30%;
+}
+
+/*fin titulo*/
+/*trabajando en section general*/
+
+p{
+    color:lightgrey;
+    font-size: 1.8rem;
+}
+
+h2{
+    color: rgba(29,92,165,255);
+    font-size: 2.5rem;
+    font-weight: normal;
+    /* NO TOMA LA TIPOGRAFIA
+    font-family: 'Amita', serif;
+    font-family: 'Bellefair', serif;
+    font-family: 'Cinzel', serif;
+    font-family: 'Kurale', serif;
+    font-family: 'Life Savers', serif;
+    font-family: 'Sorts Mill Goudy', serif; */
+}
+
+h3{
+    color: rgba(101,88,173,255);
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+
+
+.aside{
+    grid-area: aside;
+    background-color: aqua;
+}
+.footer{
+    grid-area: footer;
+    background-color: rgba(1,50,92,255);
+}
+
+
