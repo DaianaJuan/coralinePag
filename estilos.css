@@ -5,6 +5,10 @@
 /*tipografia h2 y h3*/
 @import url('https://fonts.googleapis.com/css2?family=Amita&family=Bellefair&family=Cinzel&family=Kurale&family=Life+Savers&family=Sorts+Mill+Goudy&display=swap');
 
+
+
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -35,7 +39,7 @@ html{
     box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75); /*permite proyectar una sombra difuminada desde el marco de casi cualquier elemento*/
     border-radius: 4px;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
   }
 
 /*trabajando en el header*/
@@ -63,11 +67,9 @@ html{
 
 .flexMenu a{
     text-decoration: none;
-    color: rgba(240,222,56,255);
+    color: rgb(238,231,101);
     font-size: 1.8rem;
-    font-family: 'Bellefair', serif;
-    font-family: 'Kurale', serif;
-    font-family: 'Sorts Mill Goudy', serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /*fin header*/
@@ -80,13 +82,14 @@ html{
     font-family: 'Bellefair', serif;
     font-family: 'Kurale', serif;
     font-family: 'Sorts Mill Goudy', serif;
+    
 }
 
 /*titulo*/
 
 .h1{
     padding-top: 2rem;
-    padding-bottom: 4rem;    
+    padding-bottom: 6rem;    
 }
 .h1 img{
     width: 30%;
@@ -96,14 +99,19 @@ html{
 /*trabajando en section general*/
 
 p{
-    color:lightgrey;
+    color:rgb(250,250,220);
     font-size: 1.8rem;
+    line-height: 2.3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    
 }
 
 h2{
     color: rgba(29,92,165,255);
     font-size: 2.5rem;
     font-weight: normal;
+    padding-bottom: 2rem;
     /* NO TOMA LA TIPOGRAFIA
     font-family: 'Amita', serif;
     font-family: 'Bellefair', serif;
@@ -117,17 +125,133 @@ h3{
     color: rgba(101,88,173,255);
     font-weight: normal;
     font-size: 2rem;
+    padding-top: 2rem;
+}
+
+/*trabajamos sobre las imagenes y gif de main*/
+
+.gif img{
+    border-radius: 10px;
+    width: 110%;
+    float: right;
+    box-shadow: 4px 4px rgba(238, 231, 101, 0.596);
 }
 
 
+.trailer iframe{
+    border-radius: 10px;
+    border: 1px solid rgba(238, 231, 101, 0.596);  
+}
+
+.imgMundos img{
+    border-radius: 10px;
+    width: 90%;
+    /*border: 1px solid rgba(238, 231, 101, 0.596); */
+    box-shadow: 4px 4px rgba(238, 231, 101, 0.596); 
+}
+
+
+/*grid para posicionar cajas de main*/
+.gridContenido{
+    display: grid;
+    grid-template-areas:
+    "h2 h2"
+    "gif textoUno"
+    "h3uno h3uno"
+    "textoDos textoDos"
+    "h3dos h3dos"
+    "trailer trailer"
+    "h3tres h3tres"
+    "textoTres imgMundos";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 5% auto 3% auto 3% auto 3% auto;
+    gap: 5px;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+.gridContenido > * {
+    text-align: center;
+    padding: 10px;
+  }
+
+/*areas gridContainer*/
+h2{
+    grid-area: h2;
+}
+.textoUno{
+    grid-area: textoUno;
+}
+.gif{
+    grid-area: gif;
+}
+.h3uno{
+    grid-area: h3uno;
+}
+.textoDos{
+    grid-area: textoDos;
+}
+.h3dos{
+    grid-area: h3dos;
+}
+.trailer{
+    grid-area: trailer;
+    background-image: url(./imgCoraline/solotriler2.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    width: 100%; 
+    border-top: 1px solid rgba(238, 231, 101, 0.637);  
+}
+.h3tres{
+    grid-area: h3tres;
+}
+.imgMundos{
+    grid-area: imgMundos;
+    
+}
+.textoTres{
+    grid-area: textoTres;
+}
+
+
+/*trabajando en aside*/
 
 .aside{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+
     grid-area: aside;
-    background-color: aqua;
-}
-.footer{
-    grid-area: footer;
-    background-color: rgba(1,50,92,255);
+    background-color: rgba(163,95,197,255);
 }
 
+.aside img{
+    width: 100%;
+    border: 1px solid black;
+}
+
+/*trabajando en el footer*/
+.footer{
+    grid-area: footer;
+    background-color: rgb(34,48,58);
+}
+.pFooter{
+    color: rgb(238,231,101);
+    
+}
+.footer a{
+    text-decoration: none;
+    color: magenta;
+}
+
+.footer li{
+    list-style-type: none;
+    float: left;
+    font-size: 1.8rem;
+    
+}
 
