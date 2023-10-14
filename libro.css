@@ -29,7 +29,7 @@ html{
     "mainSobreElLibro"
     "footerSobreElLibro";
     grid-template-columns: 100%;
-    grid-template-rows: 12% auto 4%;
+    grid-template-rows: 14.5% auto 4%;
     gap: 10px;
 }
 #grillaSobreElLibro > * {
@@ -60,6 +60,8 @@ html{
   
 .flexMenu li{
     list-style-type: none;
+    background: linear-gradient( rgba(34, 48, 58, 0.699), rgba(163,95,197,255));
+    border-radius: 10px;
 }
   
 .flexMenu a{
