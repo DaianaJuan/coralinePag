@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="libro.css">
     <title>Libro y Autor</title>
 </head>
-<body>
+<body id="grillaSobreElLibro">
 
-    <header>
+    <header class="headerSobreElLibro">
         <nav>
-            <ul>
+            <ul class="flexMenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html">Sobre la Película</a></li>
                 <li><a href="personajes.html">Personajes</a></li>
@@ -21,19 +21,23 @@
         </nav>
     </header>
 
-    <main>
+    <main class="mainSobreElLibro">
 
-        <h1>Coraline y la Puerta Secreta</h1>
+        <div class="h1">
+            <img src="./imgCoraline/pngfind.com-coraline-png-5351959.png" alt="Título Página">
+        </div>
 
-        <section>
-            <h2>Sobre el Libro</h2>
+        <section class="grillaCont">
+        
+            <h2 class="h21">Sobre el Libro</h2>
+            <div class="t1">
             <p><strong>Coraline es una novela de fantasía oscura escrita por el escritor británico Neil Gaiman, 
             publicada en 2002 por Bloomsbury y Harper Collins.</strong></p><br><br/>
-
-            <div>
+            </div>
+            <div class="imgLibro">
                 <img src="./imgCoraline/libro.jpg" alt="Imagen de la portada del libro">
             </div>
-
+            <div class="t2">
             <p>Es una novela de fantasía y terror infantil escrita por el autor británico Neil Gaiman y publicada por
             primera vez en el año 2002 por la editorial Bloomsbury Publishing. En ella se relata la historia de Coraline,
             una niña que, sin recibir atención de sus padres, encuentra una puerta a otro mundo en su nuevo apartamento. 
@@ -44,22 +48,27 @@
             de estar considerada como una historia de terror capaz de asustar tanto a niños como a adultos gracias a la tétrica 
             imaginación del autor y a las ilustraciones en blanco y negro realizadas por el ilustrador también británico Dave 
             McKean.</p>
-        </section>
+            </div>
+    
 
-        <section>
-            <h2>Sobre Neil Gaiman</h2>
+        
+            <h2 class="h22">Sobre Neil Gaiman</h2>
 
-            <div>
-                <img src="./imgCoraline/Neil Gaiman Penned Doctor Who Episode Coming in 2011.jpeg" alt="">
+            <div class="imgAutor">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZxKJA-kdC78?si=cKSgtMQL4x9GknnD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
 
+            <div class="t3">
             <p><strong>Neil Richard Gaiman es un autor de ficción, novelas, cómics, novelas gráficas, no ficción, teatro de audio, 
             películas e historietas y escritor británico. Cultiva el género fantástico. Sus obras incluyen la serie de cómics 
             The Sandman y las novelas Stardust, Coraline y El libro del cementerio.</strong></p>
+            </div>
         </section>
+    
 
         <section>
-            <h3>La historia oculta...</h3>
+            <h3>La historia oculta</h3>
+            <div class="laHistoria">
             <p>La verdadera historia que inspiró a Neil Gaiman a la hora de escribir 'Coraline', y podría 
             decirse que es muy aterradora. Todo se remonta a Hampshire, el pueblo inglés donde creció el 
             hombre.</p>
@@ -87,13 +96,19 @@
             mujer fue llevada a un centro de rehabilitación. Entonces, este podría ser el motivo por el 
             cuál los personajes del mundo paralelo que visita Coraline en la película, tenían ojos de 
             boton negro</p>
+            </div>
 
         </section>
     </main>
 
-    <aside></aside>
+    <footer class="footerSobreElLibro">
+        <ul>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        
+        <p class="pFooter">...Ten cuidado con lo que deseas...</p>
 
-    <footer></footer>
+    </footer>
     
 </body>
 </html>

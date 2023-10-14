@@ -163,12 +163,12 @@ h3{
   justify-content: space-between;
   
 }
-/*.grilla2Personajes{
-  background-image: url(./imgCoraline/pngwing.com\ \(4\).png);
-  background-repeat: no-repeat;
+.grilla2Personajes{
+  background-image: url(./imgCoraline/pngwing.com\ \(6\).png);
+  background-repeat: repeat;
   background-position: center;
   
-}*/
+}
 .grilla2Personajes > * {
   text-align: center;
   padding: 10px;
