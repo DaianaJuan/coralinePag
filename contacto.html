@@ -42,12 +42,13 @@
 
                     <p>
                         <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" id="nombre">
+                        <input type="text" name="nombre" id="nombre"pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" required/>
                     </p>
 
                     <p>
                         <label for="email">E-mail</label>
-                        <input type="text" name="email" id="email">
+                        <input type="text" name="email" id="email" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required/>
+            
                     </p>
 
                     <p>
@@ -57,7 +58,7 @@
 
                     <p>
                         <label for="asunto">Asunto</label>
-                        <input type="text" name="asunto" id="asunto">
+                        <input type="text" name="asunto" id="asunto" required maxlength="10" minlength="3">
                     </p>
 
                     <p class="abajo">
